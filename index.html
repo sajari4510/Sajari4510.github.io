@@ -21,10 +21,10 @@
             font-size: 3em;
         }
         .menu {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px; /* Espacio entre el menú y el encabezado */
-            align-self: flex-start; /* Alinea el menú a la izquierda */
+            position: absolute; /* Cambiar a posición absoluta */
+            top: 10px; /* Ajustar el espacio desde la parte superior */
+            left: 10px; /* Ajustar el espacio desde la izquierda */
+            z-index: 1; /* Asegura que se muestre encima de otros elementos */
         }
         .dropbtn {
             background-color: #1a1a3f; /* Color de fondo */
