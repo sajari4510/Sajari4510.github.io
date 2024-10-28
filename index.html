@@ -6,46 +6,38 @@
     <title>Hola, Ale</title>
     <link rel="stylesheet" href="style.css"> <!-- enlaza archivos al css -->
     <style> 
-        body { 
-            background-color: #1a1a3f;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            flex-direction: column; /* Permite centrar elementos en columna */
-        }
-        h1 {
-            font-size: 3em;
-        }
-        .menu {
-            position: absolute; /* Cambiar a posición absoluta */
-            top: 10px; /* Ajustar el espacio desde la parte superior */
-            left: 10px; /* Ajustar el espacio desde la izquierda */
-            z-index: 1; /* Asegura que se muestre encima de otros elementos */
-        }
-        .dropbtn {
-            background-color: #1a1a3f; /* Color de fondo */
-            color: white; /* Color del texto */
-            padding: 10px; /* Espaciado interno */
-            font-size: 16px; /* Tamaño de fuente */
-            border: none; /* Sin borde */
-            cursor: pointer; /* Cambia el cursor */
-        }
-        .dropdown-content {
-            display: none; /* Oculto por defecto */
-            position: absolute; /* Posición absoluta */
-            background-color: #5E5C6C; /* Color de fondo del menú */
-            min-width: 160px; /* Ancho mínimo */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
-            z-index: 1; /* Asegura que se muestre encima de otros elementos */
-        }
-        .dropdown-content {
+body { 
+    background-color: #1a1a3f; /* Fondo de la página */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-direction: column; /* Permite centrar elementos en columna */
+}
+h1 {
+    font-size: 3em;
+}
+.menu {
+    position: absolute; /* Cambiar a posición absoluta */
+    top: 10px; /* Ajustar el espacio desde la parte superior */
+    left: 10px; /* Ajustar el espacio desde la izquierda */
+    z-index: 1; /* Asegura que se muestre encima de otros elementos */
+}
+.dropbtn {
+    background-color: #4E3C4C; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor */
+}
+.dropdown-content {
     display: none; /* Oculto por defecto */
     position: absolute; /* Posición absoluta */
-    background-color: #f9f9f9; /* Color de fondo del menú */
+    background-color: #33313b; /* Color de fondo del menú */
     min-width: 200px; /* Ancho mínimo */
     height: 100vh; /* Altura del menú desplegable hasta el final de la pantalla */
     top: 0; /* Alineado a la parte superior del contenedor */
@@ -53,13 +45,19 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
     z-index: 1; /* Asegura que se muestre encima de otros elementos */
 }
+.dropdown-content a {
+    color: white; /* Color del texto de las opciones */
+    padding: 12px 16px; /* Espaciado interno (se mantiene igual) */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Cada enlace ocupa una línea completa */
+}
+.dropdown-content a:hover {
+    background-color: #4E3C4C; /* Color de fondo al pasar el mouse */
+}
+.menu:hover .dropdown-content {
+    display: block; /* Muestra el menú al pasar el mouse */
+}
 
-        .dropdown-content a:hover {
-            background-color: #33313b; /* Color de fondo al pasar el mouse */
-        }
-        .menu:hover .dropdown-content {
-            display: block; /* Muestra el menú al pasar el mouse */
-        }
     </style>
 </head>
 <body>
