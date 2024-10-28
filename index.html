@@ -15,14 +15,58 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            flex-direction: column; /* Permite centrar elementos en columna */
         }
         h1 {
             font-size: 3em;
         }
+        .menu {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px; /* Espacio entre el menú y el encabezado */
+            align-self: flex-start; /* Alinea el menú a la izquierda */
+        }
+        .dropbtn {
+            background-color: #4CAF50; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            font-size: 16px; /* Tamaño de fuente */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambia el cursor */
+        }
+        .dropdown-content {
+            display: none; /* Oculto por defecto */
+            position: absolute; /* Posición absoluta */
+            background-color: #f9f9f9; /* Color de fondo del menú */
+            min-width: 160px; /* Ancho mínimo */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+            z-index: 1; /* Asegura que se muestre encima de otros elementos */
+        }
+        .dropdown-content a {
+            color: black; /* Color del texto */
+            padding: 12px 16px; /* Espaciado interno */
+            text-decoration: none; /* Sin subrayado */
+            display: block; /* Cada enlace ocupa una línea completa */
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+        }
+        .menu:hover .dropdown-content {
+            display: block; /* Muestra el menú al pasar el mouse */
+        }
     </style>
 </head>
 <body>
+    <div class="menu">
+        <button class="dropbtn">Menú</button>
+        <div class="dropdown-content">
+            <a href="#opcion1">Opción 1</a>
+            <a href="#opcion2">Opción 2</a>
+            <a href="#opcion3">Opción 3</a>
+        </div>
+    </div>
     <h1>Hola, Ale</h1>
-    <script src="script.js"></script> <!-- Enlaza tu script despues-->
+    <script src="script.js"></script> <!-- Enlaza tu script después -->
 </body>
 </html>
+
